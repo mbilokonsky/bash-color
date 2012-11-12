@@ -4,7 +4,7 @@ bash-color
 A node.js module for wrapping strings in color codes for pretty printing in bash. Usage is very simple:
 
 ```js
-var color = require('bash-colors');
+var color = require('bash-color');
 console.log('Guess which word is ' + color.red('red') + ' when this is run?');
 ```
 
