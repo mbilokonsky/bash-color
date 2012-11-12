@@ -1,7 +1,13 @@
 bash-color
 ============
 
-A node.js module for wrapping strings in color codes for pretty printing in bash. Usage is very simple:
+A node.js module for wrapping strings in color codes for pretty printing in bash. Usage is very simple. Install via NPM:
+
+```bash
+npm install bash-color
+```
+
+Then import it into your project:
 
 ```js
 var color = require('bash-color');
