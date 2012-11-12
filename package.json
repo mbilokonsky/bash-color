@@ -1,6 +1,6 @@
 {
 	"name": "bash-color",
-	"version" : "0.0.1",
+	"version" : "0.0.2",
 	"author" : "mykola bilokonsky <mbilokonsky@gmail.com>",
 	"description" : "a simple tool for wrapping strings in bash color codes. Used to color console output.",
 	"repository": {
