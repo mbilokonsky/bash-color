@@ -1,7 +1,7 @@
 bash-colors
 ============
 
-A node.js module for wrapping strings in color codes for pretty printing in BASH. Usage is very simple:
+A node.js module for wrapping strings in color codes for pretty printing in bash. Usage is very simple:
 
 ```js
 var color = require('bash-colors');
@@ -40,6 +40,8 @@ var string = color.bash_codes.GREEN.text + "This text is green." + color.REMOVE_
 ```
 Just pay attention to that `color.REMOVE_COLOR` append - if you don't add that you may accidentally have all the rest of your console output colored until you do. The convenience methods all append that for you.
 
+When to use bash-color and when not to use bash-color
+===
 Please understand the way bash color codes work: these methods actually prepend and append characters to your strings. These characters are only meaningful in a bash environment - they tell bash how to color the following text. If you try to add this stuff to strings that will be later rendered in an HTML page then you're going to see some weird characters show up - don't do that. 
 
 The whole point of this is that you can quickly and easily wrap pieces of text just before logging them to the console. This is useful in things like logging tools (`console.log(color.red('[error]') + ' - ' + err)`), or if you're building some sort of CLI interface and expect the user to interact directly with various color-coded pieces of text in the console.
