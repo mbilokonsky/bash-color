@@ -1,5 +1,5 @@
 {
-	"name": "string-colors",
+	"name": "bash-colors",
 	"version" : "0.0.1",
 	"author" : "mykola bilokonsky <mbilokonsky@gmail.com>",
 	"description" : "a simple tool for wrapping strings in color codes." 
