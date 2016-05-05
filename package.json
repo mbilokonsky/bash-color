@@ -1,6 +1,6 @@
 {
 	"name": "bash-color",
-	"version" : "0.0.3",
+	"version" : "0.0.4",
 	"author" : "mykola bilokonsky <mbilokonsky@gmail.com>",
 	"description" : "a simple tool for wrapping strings in bash color codes. Used to color console output.",
 	"repository": {
@@ -16,5 +16,6 @@
 		"pretty print",
 		"color codes"
 	],
+	"license": "MIT",
 	"main": "./index.js"
 }
