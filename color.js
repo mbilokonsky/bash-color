@@ -1,75 +1,75 @@
 var bash_codes = exports.bash_codes = {
 	"BLACK" : {
-		"text" : "\033[0;30m",
-		"underline": "\033[4;30m",
-		"background": "\033[40m",
-		"bold":"\033[1;30m",
-		"hi_text":"\033[0;90m",
-		"hi_bold" : "\033[1;90m",
-		"hi_background" : "\033[0;100m"
+		"text" : "\x1b[0;30m",
+		"underline": "\x1b[4;30m",
+		"background": "\x1b[40m",
+		"bold":"\x1b[1;30m",
+		"hi_text":"\x1b[0;90m",
+		"hi_bold" : "\x1b[1;90m",
+		"hi_background" : "\x1b[0;100m"
 	},
 	"RED" : {
-		"text" : "\033[0;31m",
-		"bold":"\033[1;31m",
-		"underline": "\033[4;31m",
-		"background": "\033[41m",
-		"hi_text":"\033[0;91m",
-		"hi_bold" : "\033[1;91m",
-		"hi_background" : "\033[0;101m"
+		"text" : "\x1b[0;31m",
+		"bold":"\x1b[1;31m",
+		"underline": "\x1b[4;31m",
+		"background": "\x1b[41m",
+		"hi_text":"\x1b[0;91m",
+		"hi_bold" : "\x1b[1;91m",
+		"hi_background" : "\x1b[0;101m"
 	},
 	"GREEN" : {
-		"text" : "\033[0;32m",
-		"bold":"\033[1;32m",
-		"underline": "\033[4;32m",
-		"background": "\033[42m",
-		"hi_text":"\033[0;92m",
-		"hi_bold" : "\033[1;92m",
-		"hi_background" : "\033[0;102m"
+		"text" : "\x1b[0;32m",
+		"bold":"\x1b[1;32m",
+		"underline": "\x1b[4;32m",
+		"background": "\x1b[42m",
+		"hi_text":"\x1b[0;92m",
+		"hi_bold" : "\x1b[1;92m",
+		"hi_background" : "\x1b[0;102m"
 	},
 	"YELLOW" : {
-		"text" : "\033[0;33m",
-		"bold":"\033[1;33m",
-		"underline": "\033[4;33m",
-		"background": "\033[43m",
-		"hi_text":"\033[0;93m",
-		"hi_bold" : "\033[1;93m",
-		"hi_background" : "\033[0;103m"
+		"text" : "\x1b[0;33m",
+		"bold":"\x1b[1;33m",
+		"underline": "\x1b[4;33m",
+		"background": "\x1b[43m",
+		"hi_text":"\x1b[0;93m",
+		"hi_bold" : "\x1b[1;93m",
+		"hi_background" : "\x1b[0;103m"
 	},
 	"BLUE" : {
-		"text" : "\033[0;34m",
-		"bold":"\033[1;34m",
-		"underline": "\033[4;34m",
-		"background": "\033[44m",
-		"hi_text":"\033[0;94m",
-		"hi_bold" : "\033[1;94m",
-		"hi_background" : "\033[0;104m"
+		"text" : "\x1b[0;34m",
+		"bold":"\x1b[1;34m",
+		"underline": "\x1b[4;34m",
+		"background": "\x1b[44m",
+		"hi_text":"\x1b[0;94m",
+		"hi_bold" : "\x1b[1;94m",
+		"hi_background" : "\x1b[0;104m"
 	},
 	"PURPLE" : {
-		"text" : "\033[0;35m",
-		"bold":"\033[1;35m",
-		"underline": "\033[4;35m",
-		"background": "\033[45m",
-		"hi_text":"\033[0;95m",
-		"hi_bold" : "\033[1;95m",
-		"hi_background" : "\033[0;105m"
+		"text" : "\x1b[0;35m",
+		"bold":"\x1b[1;35m",
+		"underline": "\x1b[4;35m",
+		"background": "\x1b[45m",
+		"hi_text":"\x1b[0;95m",
+		"hi_bold" : "\x1b[1;95m",
+		"hi_background" : "\x1b[0;105m"
 	},
 	"CYAN" : {
-		"text" : "\033[0;36m",
-		"bold":"\033[1;36m",
-		"underline": "\033[4;36m",
-		"background": "\033[46m",
-		"hi_text":"\033[0;96m",
-		"hi_bold" : "\033[1;96m",
-		"hi_background" : "\033[0;106m"
+		"text" : "\x1b[0;36m",
+		"bold":"\x1b[1;36m",
+		"underline": "\x1b[4;36m",
+		"background": "\x1b[46m",
+		"hi_text":"\x1b[0;96m",
+		"hi_bold" : "\x1b[1;96m",
+		"hi_background" : "\x1b[0;106m"
 	},
 	"WHITE" : {
-		"text" : "\033[0;37m",
-		"bold":"\033[1;37m",
-		"underline": "\033[4;37m",
-		"background": "\033[47m",
-		"hi_text":"\033[0;97m",
-		"hi_bold" : "\033[1;97m",
-		"hi_background" : "\033[0;107m"
+		"text" : "\x1b[0;37m",
+		"bold":"\x1b[1;37m",
+		"underline": "\x1b[4;37m",
+		"background": "\x1b[47m",
+		"hi_text":"\x1b[0;97m",
+		"hi_bold" : "\x1b[1;97m",
+		"hi_background" : "\x1b[0;107m"
 	}
 };
 
@@ -93,7 +93,7 @@ var styles = exports.styles = {
 	hi_background: "hi_background"
 };
 
-var REMOVE_COLOR = exports.REMOVE_COLOR = "\033[0m";
+var REMOVE_COLOR = exports.REMOVE_COLOR = "\x1b[0m";
 
 
 // various logical inconsistencies in the code below - renderColor and wrap seem like they should be combined, but I'm letting wrap basically stand on its own
